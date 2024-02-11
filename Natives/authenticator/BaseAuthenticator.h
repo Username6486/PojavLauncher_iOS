@@ -17,8 +17,5 @@ typedef void(^Callback)(id status, BOOL success);
 
 @end
 
-@interface LocalAuthenticator : BaseAuthenticator
-@end
-
 @interface MicrosoftAuthenticator : BaseAuthenticator
 @end
