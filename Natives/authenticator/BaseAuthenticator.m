@@ -28,7 +28,7 @@ static BaseAuthenticator *current = nil;
         return nil;
     }
     if ([authData[@"accessToken"] length] < 5) {
-        return [[LocalAuthenticator alloc] initWithData:authData];
+        return [[MicrosoftAuthenticator alloc] initWithData:authData];
     } else { 
         return [[MicrosoftAuthenticator alloc] initWithData:authData];
     }
